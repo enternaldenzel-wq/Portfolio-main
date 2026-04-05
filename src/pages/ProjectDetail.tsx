@@ -190,18 +190,37 @@ const ProjectDetail = () => {
         }
 
         if (section.type === "video") {
+          const videoUrl = section.content as string;
+          const isYouTube = videoUrl.includes("youtube.com") || videoUrl.includes("youtu.be");
+          
+          let embedUrl = videoUrl;
+          if (isYouTube) {
+            const videoId = videoUrl.split("v=")[1]?.split("&")[0] || videoUrl.split("/").pop();
+            embedUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&loop=1&playlist=${videoId}&controls=1&modestbranding=1`;
+          }
+
           return (
             <section key={idx} id={sectionId} className="px-6 md:px-12 lg:px-16 py-24">
               <motion.div {...fadeIn} className="relative aspect-[16/9] overflow-hidden bg-white/5 pb-[56.25%]">
-                <video 
-                  src={section.content as string} 
-                  className="absolute inset-0 w-full h-full object-cover" 
-                  autoPlay 
-                  muted 
-                  loop 
-                  playsInline 
-                  controls
-                />
+                {isYouTube ? (
+                  <iframe 
+                    src={embedUrl}
+                    className="absolute inset-0 w-full h-full border-0"
+                    allow="autoplay; encrypted-media; picture-in-view"
+                    allowFullScreen
+                    title={section.title || "Project Video"}
+                  />
+                ) : (
+                  <video 
+                    src={videoUrl} 
+                    className="absolute inset-0 w-full h-full object-cover" 
+                    autoPlay 
+                    muted 
+                    loop 
+                    playsInline 
+                    controls
+                  />
+                )}
                 {section.title && (
                   <div className="absolute bottom-12 left-12">
                      <p className="font-mono-text text-[10px] uppercase tracking-widest text-white/40">{section.title}</p>
