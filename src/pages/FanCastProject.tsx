@@ -72,7 +72,7 @@ const FanCastProject = () => {
             {...fadeIn} 
             className="aspect-[3/2] overflow-hidden bg-white/5"
           >
-            <img src={heroImg} className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000" alt="FanCast Hero" />
+            <img src={heroImg} className="w-full h-full object-cover transition-all duration-1000" alt="FanCast Hero" />
           </motion.div>
         </div>
       </section>

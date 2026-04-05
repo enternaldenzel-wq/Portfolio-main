@@ -145,7 +145,7 @@ const Work = () => {
                           <img 
                             src={project.heroImage} 
                             alt={project.title} 
-                            className="h-full w-full object-cover transition-all duration-1000 group-hover:scale-105 group-hover:blur-md group-hover:brightness-50" 
+                            className="h-full w-full object-cover transition-all duration-1000 group-hover:scale-105 group-hover:blur-md" 
                           />
 
                           {/* Hover Overlay Information */}

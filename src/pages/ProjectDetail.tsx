@@ -107,7 +107,7 @@ const ProjectDetail = () => {
             {...fadeIn} 
             className="aspect-[3/2] overflow-hidden bg-white/5"
           >
-            <img src={project.heroImage} className="w-full h-full object-contain grayscale hover:grayscale-0 transition-all duration-1000" alt={project.title} />
+            <img src={project.heroImage} className="w-full h-full object-contain transition-all duration-1000" alt={project.title} />
           </motion.div>
         </div>
       </section>
