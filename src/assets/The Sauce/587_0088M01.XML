@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NonRealTimeMeta xmlns="urn:schemas-professionalDisc:nonRealTimeMeta:ver.2.00" xmlns:lib="urn:schemas-professionalDisc:lib:ver.2.00" lastUpdate="2014-04-14T04:46:14Z">
+	<TargetMaterial umidRef="060A2B340101010501010D43130000004641BA32616705DF08004602029996BB"/>
+	<Duration value="1336"/>
+	<LtcChangeTable tcFps="25" halfStep="false">
+		<LtcChange frameCount="0" value="16404200" status="increment"/>
+		<LtcChange frameCount="1335" value="01344300" status="end"/>
+	</LtcChangeTable>
+	<CreationDate value="2014-04-14T04:45:20Z"/>
+	<TypicalUbit value="0000000000000000"/>
+	<KeyFrame frameCount="0"/>
+	<BodyUmidBasicChangeTable>
+		<BodyUmidBasicChange frameCount="0" value="060A2B340101010501010D43330000004641BA32616705DF08004602029996BB" status="start"/>
+	</BodyUmidBasicChangeTable>
+	<BodyUmidWhenChangeTable>
+		<BodyUmidWhenChange frameCount="0" value="44FFA10161670580" status="increment"/>
+		<BodyUmidWhenChange frameCount="1335" value="044DA30161670580" status="end"/>
+	</BodyUmidWhenChangeTable>
+	<BodyUmidWhereChangeTable>
+		<BodyUmidWhereChange frameCount="0" value="000000000000000000000000" status="start"/>
+	</BodyUmidWhereChangeTable>
+	<BodyUmidWhoChangeTable>
+		<BodyUmidWhoChange frameCount="0" value="000000000000000000000000" status="start"/>
+	</BodyUmidWhoChangeTable>
+	<KlvPacketTable>
+		<KlvPacket key="060E2B34010101050301020A02000000" frameCount="0" lengthValue="095F5265635374617274" status="spot"/>
+	</KlvPacketTable>
+	<VideoFormat>
+		<VideoRecPort port="DIRECT"/>
+		<VideoFrame videoCodec="AVC_3840_2160_H422IP@L51" captureFps="25.00p" formatFps="25p"/>
+		<VideoLayout pixel="3840" numOfVerticalLine="2160" aspectRatio="16:9"/>
+	</VideoFormat>
+	<AudioFormat numOfChannel="8">
+		<AudioRecPort port="ANALOG" audioCodec="LPCM24" trackDst="CH1"/>
+		<AudioRecPort port="ANALOG" audioCodec="LPCM24" trackDst="CH2"/>
+		<AudioRecPort port="OTHERS" audioCodec="LPCM24" trackDst="CH3"/>
+		<AudioRecPort port="OTHERS" audioCodec="LPCM24" trackDst="CH4"/>
+		<AudioRecPort port="OTHERS" audioCodec="LPCM24" trackDst="CH5"/>
+		<AudioRecPort port="OTHERS" audioCodec="LPCM24" trackDst="CH6"/>
+		<AudioRecPort port="OTHERS" audioCodec="LPCM24" trackDst="CH7"/>
+		<AudioRecPort port="OTHERS" audioCodec="LPCM24" trackDst="CH8"/>
+	</AudioFormat>
+	<Device manufacturer="Sony" modelName="PXW-FS7" serialNo="0038587">
+	</Device>
+	<Lens modelName=""/>
+	<RecordingMode type="normal" cacheRec="false"/>
+	<AcquisitionRecord>
+		<Group name="GPSinExif">
+			<Item name="frameCount" value="0"/>
+			<Item name="VersionID" value="2.3.0.0"/>
+			<Item name="LatitudeRef" value="N"/>
+			<Item name="Latitude" value="51;35:48.617"/>
+			<Item name="LongitudeRef" value="W"/>
+			<Item name="Longitude" value="0;19:27.635"/>
+			<Item name="AltitudeRef" value="0"/>
+			<Item name="Altitude" value="54.300"/>
+			<Item name="TimeStamp" value="17:13:47.000"/>
+			<Item name="Status" value="A"/>
+			<Item name="MeasureMode" value="3"/>
+			<Item name="DOP" value="1.6100"/>
+			<Item name="MapDatum" value="WGS-84"/>
+			<Item name="DateStamp" value="2024:12:29"/>
+			<Item name="Differential" value="0"/>
+		</Group>
+	</AcquisitionRecord>
+</NonRealTimeMeta>

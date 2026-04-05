@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:wght@400;700&family=Space+Grotesk:wght@300;400;500;600;700&family=Stardos+Stencil:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 8%;
+    --foreground: 0 0% 100%;
+
+    --card: 0 65% 16%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 0 65% 16%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 0 78% 35%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 50% 12%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 0 35% 18%;
+    --muted-foreground: 0 15% 70%;
+
+    --accent: 0 90% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 30% 30%;
+    --input: 0 30% 30%;
+    --ring: 0 78% 35%;
+
+    --radius: 0.25rem;
+
+    --sidebar-background: 0 60% 10%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 0 72% 38%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 0 40% 15%;
+    --sidebar-accent-foreground: 0 0% 95%;
+    --sidebar-border: 0 30% 20%;
+    --sidebar-ring: 0 72% 38%;
+
+    --font-display: 'Bebas Neue', sans-serif;
+    --font-mono: 'Space Mono', monospace;
+    --font-body: 'Space Grotesk', sans-serif;
+  }
+
+  .dark {
+    --background: 0 0% 8%;
+    --foreground: 0 0% 100%;
+    --card: 0 65% 16%;
+    --card-foreground: 0 0% 100%;
+    --popover: 0 65% 16%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 0 78% 35%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 50% 12%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 0 35% 18%;
+    --muted-foreground: 0 15% 70%;
+    --accent: 0 90% 50%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 30% 30%;
+    --input: 0 30% 30%;
+    --ring: 0 78% 35%;
+    --sidebar-background: 0 60% 10%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 0 72% 38%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 0 40% 15%;
+    --sidebar-accent-foreground: 0 0% 95%;
+    --sidebar-border: 0 30% 20%;
+    --sidebar-ring: 0 72% 38%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display);
+  }
+  .font-body {
+    font-family: var(--font-body);
+  }
+  .font-mono-text {
+    font-family: var(--font-mono);
+  }
+}
+
+@layer components {
+  .nav-pill {
+    @apply rounded-full border border-foreground/40 px-5 py-2 text-xs tracking-[0.2em] text-foreground uppercase transition-all duration-300;
+  }
+  .nav-pill:hover {
+    @apply bg-foreground/10 border-foreground/70;
+  }
+
+  .gallery-card {
+    @apply relative flex-shrink-0 overflow-hidden cursor-pointer;
+    transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+  .gallery-card:hover {
+    @apply scale-[1.03];
+  }
+  .gallery-card img {
+    @apply h-full w-full object-cover;
+    transition: transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+  .gallery-card:hover img {
+    @apply scale-110;
+  }
+
+  .gallery-card-center {
+    @apply opacity-100 z-10;
+  }
+  .gallery-card-edge {
+    @apply opacity-60 hover:opacity-90;
+  }
+}
