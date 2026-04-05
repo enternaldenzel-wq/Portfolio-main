@@ -49,7 +49,7 @@ const CV = () => {
         >
           <iframe 
             src="/Denzel_Nwankwo_CV.pdf#view=FitH&toolbar=0&navpanes=0&scrollbar=0"
-            className="w-full h-[1200px] border-none grayscale-[0.1] opacity-90 group-hover:opacity-100 transition-opacity duration-700"
+            className="w-full h-[1200px] border-none opacity-90 group-hover:opacity-100 transition-opacity duration-700"
             title="Denzel Nwankwo CV"
           />
           
