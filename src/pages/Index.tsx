@@ -124,7 +124,7 @@ const Index = () => {
             initial={{ opacity: 0, x: -60 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, delay: 0.1, ease: "easeOut" }}
-            className="px-6 pt-8 md:px-12 md:pt-16 lg:px-16"
+            className="px-6 pt-24 md:px-12 md:pt-16 lg:px-16"
           >
             <h1 className="font-display text-[clamp(5rem,12vw,11rem)] leading-[0.92] tracking-[0.02em] text-foreground">
               {displayedText.split("\n").map((line, i) => (
