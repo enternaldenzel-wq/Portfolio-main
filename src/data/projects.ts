@@ -50,7 +50,7 @@ import ts19 from "@/assets/The Sauce/ilovepdf_pages-to-jpg (1)/ilovepdf_pages-to
 import ts20 from "@/assets/The Sauce/ilovepdf_pages-to-jpg (1)/ilovepdf_pages-to-jpg (1)/the_sauce_20.jpg";
 import ts21 from "@/assets/The Sauce/ilovepdf_pages-to-jpg (1)/ilovepdf_pages-to-jpg (1)/the_sauce_21.jpg";
 import ts22 from "@/assets/The Sauce/ilovepdf_pages-to-jpg (1)/ilovepdf_pages-to-jpg (1)/the_sauce_22.jpg";
-import tsVideo from "@/assets/The Sauce/Deliverables/the_sauce_final.mp4";
+// import tsVideo from "@/assets/The Sauce/Deliverables/the_sauce_final.mp4";
 import projectPillatea from "@/assets/PillaTea_ScreenGrabs/PillaTea_Brand_Presentation-01.png";
 import pt02 from "@/assets/PillaTea_ScreenGrabs/PillaTea_Brand_Presentation-02.png";
 import pt03 from "@/assets/PillaTea_ScreenGrabs/PillaTea_Brand_Presentation-03.png";
@@ -312,11 +312,13 @@ export const projects: Project[] = [
       { type: "image", content: ts20 },
       { type: "image", content: ts21 },
       { type: "image", content: ts22 },
+/* 
       {
         type: "video",
         content: tsVideo,
         title: "Final Advert Deliverable"
       }
+*/
     ]
   },
   {
