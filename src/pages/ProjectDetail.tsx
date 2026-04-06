@@ -61,11 +61,11 @@ const ProjectDetail = () => {
                 { label: "ROLE", value: project.role },
                 { label: "INDUSTRY", value: project.industry }
               ].map((spec, i) => (
-                <div key={i} className="flex justify-between items-center py-6 border-b border-white/10 group">
-                  <span className="font-mono-text text-[10px] tracking-widest text-white/40 group-hover:text-white/60 transition-colors uppercase">
+                <div key={i} className="flex justify-between items-start py-6 border-b border-white/10 group">
+                  <span className="font-mono-text text-[10px] tracking-widest text-white/40 group-hover:text-white/60 transition-colors uppercase pt-1.5">
                     {spec.label}
                   </span>
-                  <span className="font-body text-xl md:text-2xl font-medium uppercase text-white/90">
+                  <span className="font-body text-xl md:text-2xl font-medium uppercase text-white/90 text-right max-w-[65%] sm:max-w-none">
                     {spec.value}
                   </span>
                 </div>
