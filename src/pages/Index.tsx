@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect, useCallback } from "react";
 import { motion } from "framer-motion";
 import { useNavigate, Link } from "react-router-dom";
+import { useIsMobile } from "@/hooks/use-mobile";
 import heroImage from "@/assets/IMG_5214.jpg";
 import projectFancast from "@/assets/project-fancast.jpg";
 import projectRose from "@/assets/project-rose.png";
@@ -36,6 +37,7 @@ const Index = () => {
   const [displayedText, setDisplayedText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const isMobile = useIsMobile();
   const navigate = useNavigate();
 
   const handleMouseMove = (e: React.MouseEvent) => {
@@ -179,7 +181,7 @@ const Index = () => {
                         animate={{
                           width: w,
                           height: h,
-                          opacity: isHovered || isCenter ? 1 : Math.max(0.4, 1 - Math.abs(i - currentSlide) * 0.2),
+                          opacity: isMobile || isHovered || isCenter ? 1 : Math.max(0.4, 1 - Math.abs(i - currentSlide) * 0.2),
                         }}
                         transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
                       >
