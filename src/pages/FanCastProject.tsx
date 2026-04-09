@@ -81,7 +81,7 @@ const FanCastProject = () => {
       <section className="px-6 md:px-12 lg:px-16 py-48 border-t border-white/10">
         <div className="max-w-[1600px] mx-auto grid grid-cols-1 lg:grid-cols-[1fr_2.5fr] gap-24">
           <motion.div {...fadeIn}>
-            <p className="font-mono-text text-[10px] uppercase tracking-widest text-white/30 sticky top-32">THE CHALLENGE</p>
+            <p className="font-mono-text text-[10px] uppercase tracking-widest text-white/30 static lg:sticky lg:top-32">THE CHALLENGE</p>
           </motion.div>
           <motion.div {...fadeIn} className="space-y-16">
             <h2 className="font-body text-[clamp(2.5rem,6vw,6.5rem)] leading-tight tracking-tight font-medium text-white/95 lowercase">
@@ -103,7 +103,7 @@ const FanCastProject = () => {
       <section className="px-6 md:px-12 lg:px-16 py-48 bg-white/5">
         <div className="max-w-[1600px] mx-auto grid grid-cols-1 lg:grid-cols-[1fr_2.5fr] gap-24">
           <motion.div {...fadeIn}>
-            <p className="font-mono-text text-[10px] uppercase tracking-widest text-white/30 sticky top-32">QUANTITATIVE RESEARCH</p>
+            <p className="font-mono-text text-[10px] uppercase tracking-widest text-white/30 static lg:sticky lg:top-32">QUANTITATIVE RESEARCH</p>
           </motion.div>
           <motion.div {...fadeIn} className="space-y-16">
             <div className="aspect-[16/9] overflow-hidden">
@@ -120,7 +120,7 @@ const FanCastProject = () => {
       <section className="px-6 md:px-12 lg:px-16 py-48">
         <div className="max-w-[1600px] mx-auto grid grid-cols-1 lg:grid-cols-[1fr_2.5fr] gap-24">
           <motion.div {...fadeIn}>
-            <p className="font-mono-text text-[10px] uppercase tracking-widest text-white/30 sticky top-32">METRICS</p>
+            <p className="font-mono-text text-[10px] uppercase tracking-widest text-white/30 static lg:sticky lg:top-32">METRICS</p>
           </motion.div>
           <motion.div {...fadeIn} className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {[
@@ -144,7 +144,7 @@ const FanCastProject = () => {
       <section className="px-6 md:px-12 lg:px-16 py-48 border-t border-white/10">
         <div className="max-w-[1600px] mx-auto grid grid-cols-1 lg:grid-cols-[1fr_2.5fr] gap-24">
           <motion.div {...fadeIn}>
-            <p className="font-mono-text text-[10px] uppercase tracking-widest text-white/30 sticky top-32">PERSONA INSIGHTS</p>
+            <p className="font-mono-text text-[10px] uppercase tracking-widest text-white/30 static lg:sticky lg:top-32">PERSONA INSIGHTS</p>
           </motion.div>
           <motion.div {...fadeIn} className="space-y-16">
             <div className="aspect-[16/9] overflow-hidden bg-white/5">

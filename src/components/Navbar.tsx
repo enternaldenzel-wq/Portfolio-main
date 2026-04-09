@@ -10,6 +10,7 @@ interface NavbarProps {
 
 const Navbar = ({ isMenuOpen, setIsMenuOpen }: NavbarProps) => {
   const [currentTime, setCurrentTime] = useState("");
+  const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -20,7 +21,16 @@ const Navbar = ({ isMenuOpen, setIsMenuOpen }: NavbarProps) => {
     };
     updateTime();
     const timer = setInterval(updateTime, 1000);
-    return () => clearInterval(timer);
+
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      clearInterval(timer);
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
   const menuItems = [
@@ -61,7 +71,7 @@ const Navbar = ({ isMenuOpen, setIsMenuOpen }: NavbarProps) => {
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
               transition={{ type: "spring", damping: 25, stiffness: 200 }}
-              className="fixed right-0 top-0 z-[70] h-full w-full bg-black px-8 py-8 md:w-[500px] md:px-16 flex flex-col justify-between overflow-hidden"
+              className="fixed right-0 top-0 z-[70] h-full w-full bg-black px-8 py-8 md:w-[500px] md:px-16 flex flex-col justify-between overflow-y-auto overflow-x-hidden"
             >
               <div>
                 <div className="flex justify-end mb-8">
@@ -156,7 +166,7 @@ const Navbar = ({ isMenuOpen, setIsMenuOpen }: NavbarProps) => {
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className="fixed top-0 left-0 w-full z-50 flex items-center justify-between px-6 py-8 md:px-12 lg:px-16 transition-all duration-500 pointer-events-none"
+        className={`fixed top-0 left-0 w-full z-50 flex items-center justify-between px-6 py-6 md:py-8 md:px-12 lg:px-16 transition-all duration-500 pointer-events-none ${isScrolled ? 'bg-black/90 backdrop-blur-md border-b border-white/5 py-4 md:py-6' : ''}`}
       >
         <div className="pointer-events-auto h-8 w-8 cursor-pointer" onClick={() => navigate("/")}>
           <img src={asset1} alt="DENZEL NWANKWO" className="h-full w-full object-contain opacity-90 transition-opacity hover:opacity-100" />

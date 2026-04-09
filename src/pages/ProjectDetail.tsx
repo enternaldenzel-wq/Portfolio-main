@@ -134,7 +134,7 @@ const ProjectDetail = () => {
               <section key={idx} id={sectionId} className="px-6 md:px-12 lg:px-16 py-48 border-t border-white/10">
               <div className="max-w-[1600px] mx-auto grid grid-cols-1 lg:grid-cols-[1fr_2.5fr] gap-24">
                 <motion.div {...fadeIn}>
-                  <p className="font-mono-text text-[10px] uppercase tracking-widest text-white/30 sticky top-32">{section.title || "OVERVIEW"}</p>
+                  <p className="font-mono-text text-[10px] uppercase tracking-widest text-white/30 static lg:sticky lg:top-32">{section.title || "OVERVIEW"}</p>
                 </motion.div>
                 <motion.div {...fadeIn} className="space-y-16">
                   {section.subtitle && (

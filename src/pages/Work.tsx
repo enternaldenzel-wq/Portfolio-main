@@ -149,7 +149,7 @@ const Work = () => {
                           />
 
                           {/* Hover Overlay Information */}
-                          <div className="absolute inset-0 flex flex-col justify-center px-12 opacity-0 group-hover:opacity-100 transition-all duration-700 pointer-events-none translate-y-4 group-hover:translate-y-0">
+                          <div className="absolute inset-0 hidden md:flex flex-col justify-center px-12 opacity-0 group-hover:opacity-100 transition-all duration-700 pointer-events-none translate-y-4 group-hover:translate-y-0">
                              <div className="flex flex-wrap gap-2 mb-6">
                                 <span className="px-3 py-1 rounded-full border border-white/30 font-mono-text text-[9px] tracking-widest uppercase text-white/80 backdrop-blur-sm">
                                   {project.category}
@@ -166,12 +166,17 @@ const Work = () => {
                           </div>
                         </div>
 
-                        <div className="space-y-3">
+                        <div className="space-y-3 mt-4">
                           <div className="flex justify-between items-baseline">
                             <h4 className="font-display text-2xl text-white tracking-[0.02em] font-medium transition-colors group-hover:text-white/80">
                               {project.title}
                             </h4>
                             <span className="font-mono-text text-[10px] text-white/20">{project.year}</span>
+                          </div>
+                          <div className="md:hidden mt-2">
+                             <span className="px-3 py-1 rounded-full border border-white/30 font-mono-text text-[9px] tracking-widest uppercase text-white/80">
+                               {project.category}
+                             </span>
                           </div>
                         </div>
                       </Link>

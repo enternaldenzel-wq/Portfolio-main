@@ -33,6 +33,9 @@ const Index = () => {
   const galleryRef = useRef<HTMLDivElement>(null);
   const [currentSlide, setCurrentSlide] = useState(1);
   const [isDragging, setIsDragging] = useState(false);
+  const [isMouseDown, setIsMouseDown] = useState(false);
+  const [startX, setStartX] = useState(0);
+  const [scrollLeft, setScrollLeft] = useState(0);
   const [roleIndex, setRoleIndex] = useState(0);
   const [displayedText, setDisplayedText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
@@ -43,6 +46,37 @@ const Index = () => {
   const handleMouseMove = (e: React.MouseEvent) => {
     setMousePosition({ x: e.clientX, y: e.clientY });
   };
+
+  const handleScrollMouseDown = (e: React.MouseEvent) => {
+    setIsMouseDown(true);
+    setIsDragging(false);
+    if (galleryRef.current) {
+      setStartX(e.pageX - galleryRef.current.offsetLeft);
+      setScrollLeft(galleryRef.current.scrollLeft);
+    }
+  };
+
+  const handleScrollMouseLeave = () => {
+    setIsMouseDown(false);
+  };
+
+  const handleScrollMouseUp = () => {
+    setIsMouseDown(false);
+  };
+
+  const handleScrollMouseMove = (e: React.MouseEvent) => {
+    if (!isMouseDown) return;
+    e.preventDefault();
+    setIsDragging(true);
+    if (galleryRef.current) {
+      const x = e.pageX - galleryRef.current.offsetLeft;
+      const walk = (x - startX) * 2;
+      galleryRef.current.scrollLeft = scrollLeft - walk;
+    }
+  };
+
+  const nextSlide = () => setCurrentSlide(prev => Math.min(portraits.length - 1, prev + 1));
+  const prevSlide = () => setCurrentSlide(prev => Math.max(0, prev - 1));
 
   useEffect(() => {
     const currentRole = roles[roleIndex];
@@ -90,7 +124,7 @@ const Index = () => {
   const [hoveredCard, setHoveredCard] = useState<number | null>(null);
 
   return (
-    <div className="relative h-screen overflow-hidden bg-background" onMouseMove={handleMouseMove}>
+    <div className="relative min-h-[100dvh] overflow-x-hidden overflow-y-auto bg-background" onMouseMove={handleMouseMove}>
       <div className="relative h-full w-full bg-background">
         <div className="absolute inset-0 group cursor-none">
           <img
@@ -121,7 +155,7 @@ const Index = () => {
           </motion.div>
         </div>
 
-        <div className="relative z-10 flex h-screen flex-col justify-between">
+        <div className="relative z-10 flex min-h-[100dvh] flex-col justify-between">
           <motion.div
             initial={{ opacity: 0, x: -60 }}
             animate={{ opacity: 1, x: 0 }}
@@ -150,22 +184,25 @@ const Index = () => {
               transition={{ duration: 1, delay: 0.4, ease: "easeOut" }}
               className="relative w-full"
             >
-              <div
-                ref={galleryRef}
-                className="flex items-center gap-4 overflow-x-auto px-8 py-3 scrollbar-hide md:px-16"
+                <div
+                  ref={galleryRef}
+                  className="flex items-center gap-4 overflow-x-auto snap-x snap-mandatory px-8 py-3 scrollbar-hide md:px-16"
                 style={{
                   scrollbarWidth: "none",
                   msOverflowStyle: "none",
                   WebkitOverflowScrolling: "touch",
+                  cursor: isDragging ? "grabbing" : "grab"
                 }}
-                onMouseDown={() => setIsDragging(false)}
-                onMouseMove={() => setIsDragging(true)}
+                onMouseDown={handleScrollMouseDown}
+                onMouseLeave={handleScrollMouseLeave}
+                onMouseUp={handleScrollMouseUp}
+                onMouseMove={handleScrollMouseMove}
               >
                 {portraits.map((portrait, i) => {
                   const isCenter = i === currentSlide;
                   const isHovered = i === hoveredCard;
-                  const w = isHovered ? 560 : 220;
-                  const h = isHovered ? 320 : 180;
+                  const w = 220;
+                  const h = 180;
                   return (
                     <Link 
                       to={`/project/${portrait.id}`} 
@@ -173,10 +210,10 @@ const Index = () => {
                       className="block group-hover/card:z-50"
                       onClick={(e) => isDragging && e.preventDefault()}
                     >
-                      <motion.div
-                        onMouseEnter={() => setHoveredCard(i)}
-                        onMouseLeave={() => setHoveredCard(null)}
-                        className={`gallery-card group/card ${isCenter ? "gallery-card-center" : "gallery-card-edge"}`}
+                        <motion.div
+                          onMouseEnter={() => setHoveredCard(i)}
+                          onMouseLeave={() => setHoveredCard(null)}
+                          className={`gallery-card group/card snap-center ${isCenter ? "gallery-card-center" : "gallery-card-edge"}`}
                         style={{ width: w, height: h }}
                         animate={{
                           width: w,
@@ -220,24 +257,44 @@ const Index = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.8 }}
-              className="flex items-center gap-3 px-6 py-5 md:px-12 lg:px-16"
+              className="flex items-center gap-6 px-6 py-5 md:px-12 lg:px-16"
             >
-              <span className="font-mono-text text-xs text-foreground/50">
-                {String((hoveredCard !== null ? hoveredCard : currentSlide) + 1).padStart(2, "0")}
-              </span>
-              <div className="relative h-px w-36 bg-foreground/15">
-                <motion.div
-                  className="absolute left-0 top-0 h-px bg-foreground/70"
-                  animate={{
-                    width: `${(((hoveredCard !== null ? hoveredCard : currentSlide) + 1) / portraits.length) * 100}%`,
-                  }}
-                  transition={{ duration: 0.5, ease: "easeInOut" }}
-                />
+              <div className="flex items-center gap-4">
+                <button 
+                  onClick={prevSlide}
+                  disabled={currentSlide === 0}
+                  className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white/50 hover:text-white hover:border-white/50 transition-all disabled:opacity-30 disabled:pointer-events-none"
+                >
+                  ←
+                </button>
+                <button 
+                  onClick={nextSlide}
+                  disabled={currentSlide === portraits.length - 1}
+                  className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white/50 hover:text-white hover:border-white/50 transition-all disabled:opacity-30 disabled:pointer-events-none"
+                >
+                  →
+                </button>
               </div>
-              <span className="font-mono-text text-xs text-foreground/50">
-                {String(portraits.length).padStart(2, "0")}
-              </span>
+              
+              <div className="flex items-center gap-3">
+                <span className="font-mono-text text-xs text-foreground/50">
+                  {String((hoveredCard !== null ? hoveredCard : currentSlide) + 1).padStart(2, "0")}
+                </span>
+                <div className="relative h-px w-36 bg-foreground/15">
+                  <motion.div
+                    className="absolute left-0 top-0 h-px bg-foreground/70"
+                    animate={{
+                      width: `${(((hoveredCard !== null ? hoveredCard : currentSlide) + 1) / portraits.length) * 100}%`,
+                    }}
+                    transition={{ duration: 0.5, ease: "easeInOut" }}
+                  />
+                </div>
+                <span className="font-mono-text text-xs text-foreground/50">
+                  {String(portraits.length).padStart(2, "0")}
+                </span>
+              </div>
             </motion.div>
+
           </div>
         </div>
       </div>
