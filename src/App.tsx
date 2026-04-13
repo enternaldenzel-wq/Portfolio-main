@@ -8,6 +8,7 @@ import Work from "./pages/Work.tsx";
 import ProjectDetail from "./pages/ProjectDetail.tsx";
 import FanCastProject from "./pages/FanCastProject.tsx";
 import CV from "./pages/CV";
+import ProjectArchive from "./pages/ProjectArchive.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 import { useState } from "react";
@@ -55,6 +56,7 @@ const App = () => {
               <Route path="/" element={<Index />} />
               <Route path="/work" element={<Work />} />
               <Route path="/cv" element={<CV />} />
+              <Route path="/archive" element={<ProjectArchive />} />
               <Route path="/project/:id" element={<ProjectDetail />} />
               <Route path="*" element={<NotFound />} />
             </Routes>

@@ -185,6 +185,17 @@ const Work = () => {
                 })}
               </AnimatePresence>
             </div>
+
+            {/* Link to Archive */}
+            <div className="mt-48 flex flex-col items-center justify-center py-24 border-y border-white/5 group">
+              <Link to="/archive" className="flex flex-col items-center gap-6">
+                <span className="font-mono-text text-[10px] uppercase tracking-[0.4em] text-white/30 group-hover:text-white/60 transition-colors">Exploring more</span>
+                <h3 className="font-display text-4xl md:text-6xl text-white uppercase text-center hover:text-white/70 transition-colors cursor-pointer flex items-center gap-4">
+                  View older projects <span className="text-white/20 group-hover:translate-x-4 transition-transform duration-500">→</span>
+                </h3>
+                <p className="font-body text-white/20 text-sm mt-4 tracking-wide font-light">Photography, Graphic Design & Experiments</p>
+              </Link>
+            </div>
           </div>
         </section>
 
