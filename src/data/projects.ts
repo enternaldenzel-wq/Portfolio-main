@@ -270,28 +270,34 @@ export const projects: Project[] = [
     industry: "Non-Profit / Education",
     category: "Branding, Visual Identity",
     heroImage: projectUrban,
-    description: "Defining a bold, subversive visual identity for a non-profit organization dedicated to creative self-expression and community building among underprivileged youth.",
+    description: "Urban Youth reached out in September 2024 looking for a designer to help shape their identity. They had a mission — supporting young people from all backgrounds in London — but no logo, no visual language, and no guidelines. I volunteered for the role and took the project from blank page to a full brand system.",
     sections: [
       {
         type: "text",
-        title: "The Vision",
-        subtitle: "Creative power for the next generation.",
-        content: "Urban Youth aims to create a safe space for underrepresented voices to flourish through art and design. The identity needed to feel raw, expressive, and rooted in street culture while maintaining the professional credibility of a structured non-profit."
+        title: "The brief",
+        subtitle: "Designing for an emerging organisation.",
+        content: "There wasn't a formal brief. The organisation knew what they stood for but hadn't translated that into anything visual. The invitation was open: design something positive and uplifting that could attract young people and signal Urban Youth as a credible, emerging organisation."
       },
       { type: "image", content: urbanIntro },
       { type: "image", content: urbanLogo },
       { type: "image", content: urbanIcon },
       {
         type: "text",
-        title: "The Challenge",
-        subtitle: "Balancing subversion with stability.",
-        content: "How do you design for a demographic that is inherently skeptical of institutional branding? The challenge was to build a brand that feels like it belongs to the youth—bold and unfiltered—without losing the clarity needed for donors and partners."
+        title: "The thinking",
+        subtitle: "A brand with attitude.",
+        content: "Young people, especially in London, don't respond to brands that feel sanitised or corporate. There's an energy to that age — something instinctively resistant to being talked down to — and I thought the brand should lean into that rather than smooth it over. The graffiti-influenced wordmark, the heavy display typography, and the bold colour palette (teal, orange, red) were all deliberate choices rooted in that idea: a brand with attitude, but one that still felt optimistic and accessible. Rebellious energy in service of a positive goal."
       },
       { type: "image", content: urbanPalette },
       { type: "image", content: urbanPairing },
       { type: "image", content: urbanDonts },
       { type: "image", content: urbanTypo },
       { type: "image", content: urbanTypoKelsi },
+      {
+        type: "text",
+        title: "What I delivered",
+        subtitle: "A full brand system.",
+        content: "A full brand system built for an organisation starting from zero: primary and icon logo variants, a colour palette with usage guidance, a typography system, and social media templates ready to use across platforms. The guidelines were written to be usable by non-designers — people running the organisation who would need to apply the brand themselves without a designer in the room."
+      },
       { type: "image", content: urbanPosters, title: "Outdoor Promotion Showcase" }
     ]
   },
