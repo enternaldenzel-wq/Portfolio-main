@@ -220,48 +220,6 @@ export const projects: Project[] = [
     ]
   },
   {
-    id: "rose-mixing",
-    title: "Rosé Mixing – Website Redesign",
-    client: "Rosé Studios",
-    year: "2024",
-    role: "Brand Designer",
-    industry: "Music / Production",
-    category: "Web Design, Graphic Design",
-    heroImage: projectRose,
-    description: "A dual-scope project bridging premium Web Redesign with high-energy Motion Graphics. I redefined the digital presence of Rosé Mixing through a sleek, high-fidelity landing experience and a full-motion streaming package for their global broadcast presence.",
-    sections: [
-      {
-        type: "text",
-        title: "Part I: Web Redesign",
-        subtitle: "Sonic Elegance in the Digital Realm.",
-        content: "Translating the precision and warmth of analog sound into a sharp, minimalist digital identity. The redesign focuses on high-fidelity visual storytelling, ensuring the studio's technical mastery is reflected in every interaction."
-      },
-      { type: "image", content: projectRose },
-      {
-        type: "text",
-        title: "Part II: Motion Experience",
-        subtitle: "High-Energy Streaming Overlays.",
-        content: "Developing a cohesive visual language for the Rosé broadcast environment. This involved creating custom starting screens, transitions, and social media assets that maintain the brand’s technical edge while driving engagement during live sessions."
-      },
-      { type: "image", content: roseArt1 },
-      {
-        type: "video",
-        content: roseVideoStarting,
-        title: "Animated Deliverable: Starting Soon"
-      },
-      {
-        type: "video",
-        content: roseVideoQR,
-        title: "Animated Deliverable: Transition Sequence"
-      },
-      {
-        type: "image",
-        content: roseTiktok,
-        title: "Social Media: Viral Engagement Loops"
-      }
-    ]
-  },
-  {
     id: "urban-youth",
     title: "Urban Youth",
     client: "URBAN YOUTH ORG",
@@ -351,50 +309,6 @@ export const projects: Project[] = [
         content: "https://youtu.be/RmuazlDAbgQ",
         title: "Final Advert Deliverable"
       }
-    ]
-  },
-  {
-    id: "pillatea",
-    title: "Pillatea",
-    client: "Self-Made",
-    year: "2024",
-    role: "COPYWRITER & CREATIVE DIRECTOR",
-    industry: "WELLNESS / FOOD TECH | Master's Degree Project",
-    category: "Branding",
-    heroImage: projectPillatea,
-    description: "PillaTea is a premium, insect-based wellness brand specializing in matcha tea infused with ground insect protein and floral botanicals. The brand reframes edible insects as luxurious, nourishing, and aspirational products, moving beyond the 'novelty' stigma into the realm of high-end wellness rituals.",
-    sections: [
-      {
-        type: "text",
-        title: "The Vision",
-        subtitle: "Nourishment through unconventional nature.",
-        content: "The goal of PillaTea is to provide a sustainable, high-protein wellness experience. By blending ground insect protein with botanicals like Elderflower Caterpillar and Hibiscus Cocoon, I've created a product that values sustainability as much as high-quality wellness rituals."
-      },
-      { type: "image", content: projectPillatea },
-      { type: "image", content: pt02 },
-      { type: "image", content: pt03 },
-      {
-        type: "text",
-        title: "The Challenge",
-        subtitle: "Overcoming Neophobia and the 'Disgust' Factor.",
-        content: "The primary market barrier for insect-based products in Western markets is consumer neophobia. Cultural unfamiliarity and safety concerns create a psychological bridge that is difficult to cross. My challenge was to shift this perception through soft storytelling and premium, emotional branding."
-      },
-      { type: "image", content: pt04 },
-      { type: "image", content: pt05 },
-      { type: "image", content: pt06 },
-      { type: "image", content: pt07 },
-      { type: "image", content: pt08 },
-      { type: "image", content: pt09 },
-      { type: "image", content: pt10, title: "Packaging Design" },
-      { type: "image", content: pt11 },
-      { type: "image", content: pt12 },
-      { type: "image", content: pt13 },
-      { type: "image", content: pt14 },
-      { type: "image", content: pt15 },
-      { type: "image", content: pt16 },
-      { type: "image", content: pt17 },
-      { type: "image", content: pt18 },
-      { type: "image", content: pt19 }
     ]
   },
   {
