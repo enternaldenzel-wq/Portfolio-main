@@ -448,11 +448,7 @@ export const projects: Project[] = [
       },
       {
         type: "iframe",
-        content: "https://saddingtonbaynes.com/"
-      }
-    ]
-  },
-  {
+      {
     id: "anubis-fitness",
     title: "Anubis Fitness",
     client: "Anubis Fitness",
@@ -461,56 +457,38 @@ export const projects: Project[] = [
     industry: "Health & Wellness",
     category: "Web Design, Brand Identity",
     heroImage: projectAnubis,
-    description: "Anubis Fitness is a community-first gym in Stanmore that combines ancient Egyptian-themed art with modern grit. I redesigned their digital presence to match the intensity and unique atmosphere of their physical facility.",
+    description: "Anubis Fitness is a London-based gym. When the owner came to me through a mutual connection, they had a website problem: the previous designer had left them with a broken membership system, payment processing wasn't working properly, and the visual direction — heavy on Egyptian mystique and dramatic imagery — wasn't matching what the gym actually was. I took on the full redesign, handling design, WordPress implementation, and the back-end work around Stripe integration and membership functionality.",
     sections: [
       {
         type: "text",
-        title: "The Overview",
-        subtitle: "Strength in the Squad.",
-        content: "Anubis Fitness isn't just a place to lift weights; it’s a gym built entirely around the philosophy of \"Strength in the Squad.\" As a community-first gym, their facility is one-of-a-kind, featuring immersive, ancient Egyptian-themed art against a gritty, modern interior. However, their digital presence wasn't reflecting this unique, vibrant atmosphere, creating a massive disconnect between their online front door and their actual facility."
+        title: "The brief",
+        subtitle: "Community, energy, accessibility.",
+        content: "Strip back the Egyptian theming. Focus on community, energy, and accessibility. Make the membership system actually work. Keep the existing brand colours but push them harder — high contrast, vibrant, punchy. The site needed to feel alive, not mysterious."
       },
       {
         type: "text",
-        title: "The Challenge",
-        subtitle: "Visual and Technical Debt.",
-        content: "The original website was suffering from lackluster visuals that felt low-energy and uninspiring, completely missing the chance to showcase their immersive Egyptian-themed interior. On the backend, broken legacy elements caused critical features to fail, creating a disconnected and frustrated user experience for prospective members."
-      },
-      {
-        type: "text",
-        title: "Old Designs",
-        subtitle: "The Legacy State (2024).",
-        content: "Before the modernization, the digital presence was fragmented. The interface lacked the grit and atmospheric intensity of the physical facility, with high-glare white backgrounds and disconnected typography that failed to communicate the brand's 'Strength in the Squad' ethos."
+        title: "The challenge",
+        subtitle: "Fixing a broken system.",
+        content: "The biggest hurdle wasn't the design — it was the back-end work. Stripe integration and the membership system that the previous developer had left broken required learning WordPress development and payment processing on the fly. I'm not a back-end developer by training, so that was a steep learning curve. But getting those systems working was essential; a broken payment flow kills a gym's ability to actually sign up members."
       },
       { type: "image", content: anubisOld1, title: "Legacy: Hero & Atmosphere" },
       { type: "image", content: anubisOld2, title: "Legacy: Functional Membership Page" },
       { type: "image", content: anubisOld3, title: "Legacy: Coaches & Team Integration" },
       {
         type: "text",
-        title: "The Strategy & Solution",
-        subtitle: "Phased Modernization.",
-        content: "I took a phased approach, focusing first on overhauling the Home and Membership pages. I migrated the site to a clean WordPress structure to repair backend issues and prototyped a dark-mode-first UI in Figma. The design philosophy centered on high-contrast visuals—utilizing strong brand red and sharp typography to inject raw energy into the digital space."
+        title: "The design direction",
+        subtitle: "Grounded in the gym experience.",
+        content: "The previous site leaned into the Anubis name with fire imagery and dark, atmospheric design. I moved away from that completely and built something grounded in the actual gym experience: community, energy, real people. Visually, I introduced an industrial design language using angular shapes with cut-off corners (trapezoids, offset rectangles) paired with the existing brand colours in high-contrast versions. The effect is energetic and contemporary rather than themed or decorative. Community photography replaced the dramatic imagery."
       },
       {
         type: "grid",
         content: [anubisSketch1, anubisSketch2],
         title: "Sketches & Ideation: The Blueprint"
       },
-      {
-        type: "text",
-        title: "High-Fidelity Prototypes",
-        subtitle: "Bridging Process & Finality.",
-        content: "Translating our low-fidelity blueprints into high-contrast digital architectures. The high-fidelity phase focused on creating a bespoke 'Egyptian Grit' aesthetic—using oversized typography, deep-shadowed imagery, and interactive red accents to mirror the intensity of the physical training environment."
-      },
       { type: "image", content: anubisHifi4, title: "Hi-Fi: Hero Landing | Strength In The Squad" },
       { type: "image", content: anubisHifi3, title: "Hi-Fi: The Squad & The Arsenal | Immersive Facility Grid" },
       { type: "image", content: anubisHifi2, title: "Hi-Fi: Visualizing Community Metrics | Why Choose Us" },
       { type: "image", content: anubisHifi1, title: "Hi-Fi: Strategic Membership Tiers | Access For Everyone" },
-      {
-        type: "text",
-        title: "Current Screenshots: Home Page",
-        subtitle: "The New Digital Front Door.",
-        content: "The new home experience delivers immediate impact through high-contrast typography and moody imagery, showcasing the facility as a world-class training destination."
-      },
       {
         type: "image",
         content: anubisPreloader,
@@ -537,34 +515,21 @@ export const projects: Project[] = [
         title: "Home: Strategic Membership Tiers"
       },
       {
-        type: "text",
-        title: "Current Screenshots: Membership",
-        subtitle: "Tiered Access & Enrollment.",
-        content: "The membership portal simplifies the onboarding journey into a sleek, 3-tier structure, reflecting the brand's 'Ancient Power meets Modern Athletics' aesthetic."
-      },
-      {
         type: "image",
         content: anubisMembership,
         title: "Membership: Full Dynamic Layout"
       },
       {
         type: "text",
-        title: "Mobile Responsiveness",
-        subtitle: "Fitness on the Go.",
-        content: "Utilizing Tailwind CSS, I built a fully fluid, mobile-first experience. Membership cards stack logically for easy comparison, and facility videos are optimized for efficient loading on cellular data, ensuring a seamless journey from browsing to joining, even on the move."
-      },
-      {
-        type: "text",
-        title: "The Results",
-        subtitle: "Immediate Impact.",
-        content: "Phase 1 was an immediate success. I achieved a 20% decrease in bounce rate and a 10% increase in overall viewership within the first week. Most importantly, I've delivered a rock-solid, scalable foundation ready for Phase 2."
+        title: "The outcome",
+        subtitle: "A fully functional community hub.",
+        content: "The site is live and currently running. The membership system works. Payments process. The owner signed off on the direction — a shift from mystique-heavy branding to a community-focused, energetic gym website that actually functions."
       },
       {
         type: "iframe",
         content: "https://www.anubisfitness.co.uk/"
       }
     ]
-
   }
 ];
 
