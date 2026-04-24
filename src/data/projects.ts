@@ -136,13 +136,13 @@ export const projects: Project[] = [
     industry: "GAMING | Master's Degree Project",
     category: "Branding, UI/UX",
     heroImage: projectFancast,
-    description: "FanCast is a UX design case study exploring how to create an engaging streaming experience tailored to fans of movies and TV shows. The project aimed to solve common user frustrations with streaming platforms — such as cluttered interfaces, poor personalization, and difficulty discovering new content — by delivering a streamlined and visually immersive app experience.",
+    description: "Esports has a live experience problem. Millions of fans watch online, but the platforms they use — Twitch, YouTube Gaming — don't give them much to do beyond typing in chat. FanCast is a concept platform designed to close that gap: bringing the energy of a live venue into an online stream through interaction tools built around real fan behaviour.",
     sections: [
       {
         type: "text",
-        title: "The Challenge",
-        subtitle: "Identifying the core frictions in fan engagement.",
-        content: "The challenge is a lack of interaction and engagement between sports viewers and players. Traditional viewing methods often result in negative emotions like frustration and anxiety because they fail to replicate the high-energy experience of attending a game in person. Consequently, the goal is to develop a platform that improves real-time engagement and provides a more exciting, dynamic viewing experience for users."
+        title: "The problem",
+        subtitle: "Connecting the audience.",
+        content: "Most esports viewers are watching alone, on a screen, with no way to feel connected to the match or other fans in any meaningful way. Chat moves too fast. The key moments pass without context. And for someone who's never attended a live event, there's no equivalent of the crowd — the collective reaction that makes sport feel like sport. The brief was to design something that fixed this without requiring fans to actually be in a room together."
       },
       {
         type: "image",
@@ -152,8 +152,8 @@ export const projects: Project[] = [
       {
         type: "text",
         title: "Research",
-        subtitle: "78% engagement identified in target groups.",
-        content: "Users suggested unique ideas, like in-game rewards, VR, and real-time Q&A with players, indicating an appetite for new, immersive, and interactive experiences. Quantitative data showed a 20.5% increase in total hours watched on YouTube Live in Q2 2024."
+        subtitle: "Shifting markets and viewer behaviour.",
+        content: "To understand the viewing landscape, I looked at where the audience actually was. YouTube Live hit 15.2 billion hours watched in Q2 2024, up 20.5% on the previous quarter. Twitch, by contrast, dropped 11.85% to 4.8 billion hours. Kick grew 28% and crossed 1 million peak concurrent viewers. The market is shifting and no single platform has locked in the esports audience yet. I ran a survey targeting the core user — young, low income, watching online regularly, rarely attending live events. 78% of respondents had watched five or more esports events online. They weren't casual viewers. They just had no good way to participate."
       },
       {
         type: "image",
@@ -163,16 +163,44 @@ export const projects: Project[] = [
         type: "text",
         title: "Persona",
         subtitle: "Defining the core audience.",
-        content: "Understanding the diverse landscape of users through in-depth qualitative analysis and interaction mapping."
+        content: "The user persona that came out of the research: Francis, 21, a student in London. Watches streams during breaks between classes. Follows esports news on social media. Has never been to a live event — not because he doesn't want to, but because the time and cost don't work. His quote: \"I really enjoy watching esports streams during my breaks, but it's tough to attend live events because I don't have the time or money for them.\""
       },
       {
         type: "image",
         content: fancastPersona
       },
       {
+        type: "text",
+        title: "Key friction points",
+        subtitle: "The emotional high wasn't translating online.",
+        content: "Talking to users surfaced a consistent set of problems: gameplay that's hard to follow for anyone not already deep in the scene, key moments that pass too fast to process, chat that feels repetitive and low-effort, and almost no personalisation around the teams or players they actually cared about. The emotional high of a live match — the tension before a clutch moment, the release when it lands — wasn't translating online."
+      },
+      {
+        type: "image",
+        content: fancastProblem,
+        title: "Problem Statement"
+      },
+      {
+        type: "text",
+        title: "The solution",
+        subtitle: "Three core features, designed around specific frictions.",
+        content: "Key Moment Replays: Fans miss things. A replay system tied to match-critical moments lets viewers catch up immediately without scrubbing through a full VOD. Role-Based Emotes and Dynamic Reactions: Generic emojis don't carry the weight of a crowd reaction. Emotes tied to specific roles and team affiliations give fans a way to express reactions that mean something in context. Polls and Real-Time Decisions: Giving viewers a stake in the moment. Polls around match predictions, tactical choices, and player performance keep fans active during the broadcast rather than passive."
+      },
+      {
         type: "image",
         content: fancastSketches,
         title: "Ideation Sketches"
+      },
+      {
+        type: "text",
+        title: "Process",
+        subtitle: "From discover to design.",
+        content: "The design process ran through four stages: Discover (research and competitive analysis), Define (user needs and personas), Ideate (task mapping and feature prioritisation using an Eisenhower matrix), and Design (wireframes, task flows, and final screens). Competitor analysis covered Twitch (real-time community interaction) and YouTube Gaming (discoverability). Key screens designed: registration and onboarding, home feed with team following, live stream view with integrated chat and replay rail, and the account setup flow."
+      },
+      {
+        type: "image",
+        content: fancastTaskflows,
+        title: "Taskflows"
       },
       {
         type: "image",
