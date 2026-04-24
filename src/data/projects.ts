@@ -399,32 +399,26 @@ export const projects: Project[] = [
   },
   {
     id: "saddington",
-    title: "Saddington Baynes Web Design (WIP)",
+    title: "Saddington Baynes Web Redesign",
     client: "Saddington Baynes",
     year: "2025",
     role: "Web Designer",
     industry: "Healthcare / Pharma / Creative Production",
     category: "Web Design, UI/UX",
     heroImage: projectSaddington,
-    description: "Architecting a specialized digital authority hub to reposition Saddington Baynes as a category leader in healthcare and pharmaceutical visualization.",
+    description: "Saddington Baynes is a London-based creative production studio working across CGI, art, and AI. When they brought me in on contract in October 2025, their website needed a ground-up redesign — cleaner navigation, better visual hierarchy, and a structure that could actually do justice to the volume and quality of work they produce.",
     sections: [
       {
         type: "text",
-        title: "Mission",
-        subtitle: "Digital Authority.",
-        content: "The core mission was to establish a specialized digital hub that clearly communicates the studio's expertise in high-fidelity healthcare and pharmaceutical content. This involved a strategic repositioning from a multi-studio model to a single, cohesive entity focused on medical and technical visualization excellence."
+        title: "The brief",
+        subtitle: "Polished and accessible.",
+        content: "Six pages: Homepage, Works, Services, About, Blog, and Contact. The direction was clear — keep the existing branding, don't reinvent it, but build something that felt more polished, easier to navigate, and gave more real estate to visuals. No excessive pop-ups, three responsive breakpoints, and a site that could load without performance issues despite some heavy assets."
       },
       {
         type: "text",
-        title: "The Challenge",
-        subtitle: "Consolidating Fragmented Identites.",
-        content: "Legacy platforms and client pitch materials were inconsistent, failing to communicate the studio's pivot toward specialized pharma content. My challenge was to navigate a significant organizational shift (consolidating 5 studios into 1) while simultaneously rebuilding brand presence and scaling an authoritative content pipeline with lean resources."
-      },
-      {
-        type: "text",
-        title: "Part I: Legacy Analysis",
-        subtitle: "The 'H23' Era.",
-        content: "Old design systems struggled to convey technical precision. Layouts lacked the immersive cinematic quality required to represent premium CGI and medical animations to high-stakes stakeholders."
+        title: "The challenge",
+        subtitle: "Organizing content volume.",
+        content: "The hardest part was the content volume. Saddington Baynes has a substantial body of work — projects, case studies, 3D assets — and the previous site wasn't handling it well. The design problem wasn't a lack of material, it was organising and presenting it in a way that didn't overwhelm visitors. Getting the Works section and project pages to feel curated rather than crowded took the most iteration."
       },
       { type: "image", content: sbOld1 },
       { type: "image", content: sbOld2 },
@@ -432,19 +426,13 @@ export const projects: Project[] = [
       { type: "image", content: sbOld4 },
       {
         type: "text",
-        title: "Part II: Design Solutions",
-        subtitle: "Mobile-First Responsiveness.",
-        content: "I implemented a visual-first UI strategy to showcase cinematic rendering as the core value proposition. This was supported by a 3-breakpoint responsive framework (Mobile-First) to ensure a premium experience across all devices, prioritizing a streamlined navigation architecture for rapid access to high-value case studies."
+        title: "The approach",
+        subtitle: "Collaborative iteration.",
+        content: "I worked within the existing Saddington Baynes brand guidelines as the foundation, then brought in additional design decisions through research and testing — proposing treatments and iterating with the team via Slack and weekly check-ins with stakeholders. The process was collaborative throughout: daily reviews, fast feedback loops, and designing to real-world constraints around assets that were still being produced by other teams while I was building. The site was built in Framer, designed to flow naturally across desktop breakpoints without requiring separate mobile-specific redesigns."
       },
       { type: "image", content: sbSketch1, title: "UI Architecture Ideation" },
       { type: "image", content: sbSketch2, title: "Sitemap & Layout Strategy" },
       { type: "image", content: sbWipArt, title: "Digital Concept Rendering" },
-      {
-        type: "text",
-        title: "Part III: Performance Hub",
-        subtitle: "AI-Enhanced Pipelines.",
-        content: "To support a global marketing relaunch, I integrated the 'Blaze' AI toolkit into the content pipeline, facilitating efficient meta-description and blog generation. This technical foundation combined on-page SEO with high-fidelity visuals to establish a scalable, high-performance digital showcase."
-      },
       { type: "image", content: sbNew1, title: "Result: The New Frontier" },
       { type: "image", content: sbNew2 },
       { type: "image", content: sbNew3 },
@@ -452,6 +440,12 @@ export const projects: Project[] = [
       { type: "image", content: sbNew5 },
       { type: "image", content: sbNew6 },
       { type: "image", content: sbNewFooter, title: "High-end Brand Implementation" },
+      {
+        type: "text",
+        title: "The outcome",
+        subtitle: "A successful launch.",
+        content: "All six pages launched and are currently live on the Saddington Baynes website. The client signed off positively — their feedback was that the redesign was a significant improvement on what they had before, and that they were happy with where the site landed."
+      },
       {
         type: "iframe",
         content: "https://saddingtonbaynes.com/"
