@@ -4,20 +4,16 @@ import { useNavigate, Link } from "react-router-dom";
 import { useIsMobile } from "@/hooks/use-mobile";
 import heroImage from "@/assets/IMG_5214.jpg";
 import projectFancast from "@/assets/project-fancast.jpg";
-import projectRose from "@/assets/project-rose.png";
 import projectUrban from "@/assets/project-urban.jpg";
 import projectSauce from "@/assets/project-sauce.jpg";
-import projectPillatea from "@/assets/project-pillatea.png";
 import projectSaddington from "@/assets/project-saddington.png";
 import projectAnubis from "@/assets/Anubis_Fitness/Hero.jpg";
 
 
 const portraits = [
   { id: "fancast", src: projectFancast, title: "FanCast App", alt: "FanCast App – UX Case Study" },
-  { id: "rose-mixing", src: projectRose, title: "Rosé Mixing", alt: "Rosé Mixing & Mastering" },
   { id: "urban-youth", src: projectUrban, title: "Urban Youth", alt: "Urban Youth Brand Guide" },
   { id: "the-sauce", src: projectSauce, title: "The Sauce", alt: "The Sauce – Written Report" },
-  { id: "pillatea", src: projectPillatea, title: "PillaTea", alt: "PillaTea's Brand Presentation" },
   { id: "saddington", src: projectSaddington, title: "Saddington", alt: "Saddington Baynes – Creative Production" },
   { id: "anubis-fitness", src: projectAnubis, title: "Anubis Fitness", alt: "Anubis Fitness – Brand Identity & Web Redesign" },
 ];
