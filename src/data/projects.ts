@@ -523,7 +523,7 @@ export const projects: Project[] = [
         type: "text",
         title: "The outcome",
         subtitle: "A fully functional community hub.",
-        content: "The site is live and currently running. The membership system works. Payments process. The owner signed off on the direction — a shift from mystique-heavy branding to a community-focused, energetic gym website that actually functions."
+        content: "The site is live and the project is ongoing. The membership system is functional and processing payments correctly. Current focus continues to be refining the build and iterating on the design as the gym grows."
       },
       {
         type: "iframe",
