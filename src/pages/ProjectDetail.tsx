@@ -196,7 +196,7 @@ const ProjectDetail = () => {
           let embedUrl = videoUrl;
           if (isYouTube) {
             const videoId = videoUrl.split("v=")[1]?.split("&")[0] || videoUrl.split("/").pop();
-            embedUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&loop=1&playlist=${videoId}&controls=1&modestbranding=1`;
+            embedUrl = `https://www.youtube.com/embed/${videoId}?autoplay=0&controls=1&modestbranding=1&rel=0`;
           }
 
           return (
@@ -206,7 +206,7 @@ const ProjectDetail = () => {
                   <iframe 
                     src={embedUrl}
                     className="absolute inset-0 w-full h-full border-0"
-                    allow="autoplay; encrypted-media; picture-in-view"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowFullScreen
                     title={section.title || "Project Video"}
                   />
@@ -214,16 +214,13 @@ const ProjectDetail = () => {
                   <video 
                     src={videoUrl} 
                     className="absolute inset-0 w-full h-full object-cover" 
-                    autoPlay 
-                    muted 
-                    loop 
                     playsInline 
                     controls
                   />
                 )}
                 {section.title && (
-                  <div className="absolute bottom-12 left-12">
-                     <p className="font-mono-text text-[10px] uppercase tracking-widest text-white/40">{section.title}</p>
+                  <div className="absolute bottom-12 left-12 pointer-events-none bg-black/50 px-4 py-2 rounded">
+                     <p className="font-mono-text text-[10px] uppercase tracking-widest text-white">{section.title}</p>
                   </div>
                 )}
               </motion.div>
