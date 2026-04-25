@@ -29,8 +29,8 @@ const CV = () => {
             </p>
             
             <a 
-              href="/Denzel_Nwankwo_CV.pdf" 
-              download="Denzel_Nwankwo_CV.pdf"
+              href="/Denzel_Nwankwo_Digital_Designer_CV_2026.pdf" 
+              download="Denzel_Nwankwo_Digital_Designer_CV_2026.pdf"
               className="group relative inline-flex items-center gap-4 bg-white px-8 py-5 text-black font-mono-text text-[10px] uppercase tracking-widest overflow-hidden transition-transform hover:scale-[1.02] active:scale-[0.98]"
             >
               <span className="relative z-10">Download CV [PDF]</span>
@@ -48,7 +48,7 @@ const CV = () => {
           className="relative w-full max-w-[900px] mx-auto bg-white/5 border border-white/10 rounded-sm overflow-hidden group shadow-2xl shadow-white/5"
         >
           <iframe 
-            src="/Denzel_Nwankwo_CV.pdf#view=FitH&toolbar=0&navpanes=0&scrollbar=0"
+            src="/Denzel_Nwankwo_Digital_Designer_CV_2026.pdf#view=FitH&toolbar=0&navpanes=0&scrollbar=0"
             className="w-full h-[70vh] md:h-[1000px] border-none opacity-90 group-hover:opacity-100 transition-opacity duration-700"
             title="Denzel Nwankwo CV"
           />
