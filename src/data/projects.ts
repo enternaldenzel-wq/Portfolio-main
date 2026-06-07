@@ -129,7 +129,7 @@ export const projects: Project[] = [
     id: "mixed-by-rose",
     title: "MixedByRosé — Twitch Streaming Package",
     client: "MixedByRosé",
-    year: "2024",
+    year: "2026",
     role: "Brand & Motion Designer",
     industry: "Music / Streaming",
     category: "Branding, Motion Graphics",
