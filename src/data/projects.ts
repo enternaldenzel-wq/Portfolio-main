@@ -8,10 +8,10 @@ import fancastHome from "@/assets/FanCast_ScreenGrabs/Hifi_-_Digi_-_Home_Screen_
 import fancastMainStream from "@/assets/FanCast_ScreenGrabs/Hifi_-_Digi_-_Main_Screen_-_Iteration_1.png";
 import fancastSignUp from "@/assets/FanCast_ScreenGrabs/Hi-Fi_-_Sign_Up_Screen_-_Iteration_1.png";
 import projectRose from "@/assets/project-rose.png";
-import roseOffline from "@/assets/Rośe's Studio/Stream is offline.png";
-import roseBanner from "@/assets/Rośe's Studio/Mixed by rose kick banner.png";
-import roseStreamPaused from "@/assets/Rośe’s Studio/stream is paused.gif";
-import roseStringer from "@/assets/Rośe’s Studio/Stringer.gif";
+import roseOffline from "@/assets/Rose Studio/Stream is offline.png";
+import roseBanner from "@/assets/Rose Studio/Mixed by rose kick banner.png";
+import roseStreamPaused from "@/assets/Rose Studio/stream is paused.gif";
+import roseStringer from "@/assets/Rose Studio/Stringer.gif";
 import projectUrban from "@/assets/Urban Youth/Urban_Youth_BrandGuide_LinesUrban_Youth.jpg";
 import urbanIntro from "@/assets/Urban Youth/Urban_Youth_BrandGuide_LinesIntroduction.jpg";
 import urbanLogo from "@/assets/Urban Youth/Urban_Youth_BrandGuide_LinesPrimary_Logo.jpg";

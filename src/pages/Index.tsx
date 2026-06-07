@@ -8,7 +8,7 @@ import projectUrban from "@/assets/project-urban.jpg";
 import projectSauce from "@/assets/project-sauce.jpg";
 import projectSaddington from "@/assets/project-saddington.png";
 import projectAnubis from "@/assets/Anubis_Fitness/Hero.jpg";
-import projectRose from "@/assets/Rośe's Studio/Stream is offline.png";
+import projectRose from "@/assets/Rose Studio/Stream is offline.png";
 
 const portraits = [
   { id: "mixed-by-rose", src: projectRose, title: "MixedByRosé", alt: "MixedByRosé – Twitch Streaming Package" },
