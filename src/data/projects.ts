@@ -8,9 +8,8 @@ import fancastHome from "@/assets/FanCast_ScreenGrabs/Hifi_-_Digi_-_Home_Screen_
 import fancastMainStream from "@/assets/FanCast_ScreenGrabs/Hifi_-_Digi_-_Main_Screen_-_Iteration_1.png";
 import fancastSignUp from "@/assets/FanCast_ScreenGrabs/Hi-Fi_-_Sign_Up_Screen_-_Iteration_1.png";
 import projectRose from "@/assets/project-rose.png";
-import roseArt1 from "@/assets/Rośe’s Studio/Artboard 1@4x.png";
-import roseArt2 from "@/assets/Rośe’s Studio/Artboard 2@4x.png";
-import roseArt2_2 from "@/assets/Rośe’s Studio/Artboard 2_2@4x.png";
+import roseOffline from "@/assets/Rośe's Studio/Stream is offline.png";
+import roseBanner from "@/assets/Rośe's Studio/Mixed by rose kick banner.png";
 import roseStreamPaused from "@/assets/Rośe’s Studio/stream is paused.gif";
 import roseStringer from "@/assets/Rośe’s Studio/Stringer.gif";
 import projectUrban from "@/assets/Urban Youth/Urban_Youth_BrandGuide_LinesUrban_Youth.jpg";
@@ -134,7 +133,7 @@ export const projects: Project[] = [
     role: "Brand & Motion Designer",
     industry: "Music / Streaming",
     category: "Branding, Motion Graphics",
-    heroImage: roseArt2,
+    heroImage: roseOffline,
     description: "A full Twitch streaming package for a London mixing engineer, built around his personal brand and designed to hold up on screen every week.",
     sections: [
       {
@@ -143,30 +142,29 @@ export const projects: Project[] = [
         subtitle: "Professional, studio-rooted, no fluff.",
         content: "Rosé is a mixing engineer based in London who streams his sessions live on Twitch every Thursday. He came to me directly asking for a streaming package that reflected where he was at as an engineer — professional, studio-rooted, no fluff. I took full creative control on the direction."
       },
-      { type: "image", content: roseArt1, title: "Channel Banner" },
       {
         type: "text",
         title: "What I delivered",
         subtitle: "A complete streaming asset package.",
         content: "A complete streaming asset package: channel banner, offline screen, live overlays, and transition animations (stringers). His personal logo was integrated throughout as the anchor of the visual identity across all states."
       },
-      { type: "image", content: roseArt2, title: "Offline Screen" },
       {
         type: "text",
         title: "The creative direction",
         subtitle: "Studio environment over typical Twitch aesthetic.",
         content: "The brief gave me room to work, so I built something that felt like it belonged in a real studio environment rather than a typical Twitch aesthetic. Black and white photography of Rosé in session grounds everything in the actual craft. Red typography cuts through without decorating — functional and direct. The result is a package that looks the same whether the stream is live, offline, or transitioning between scenes."
       },
-      { type: "image", content: roseArt2_2, title: "Live Overlay" },
+      { type: "image", content: roseOffline, title: "Stream Offline Screen" },
+      { type: "image", content: roseBanner, title: "Channel Banner" },
       {
         type: "image",
         content: roseStreamPaused,
-        title: "Animated Deliverable: Stream Paused"
+        title: "Stream Paused Screen"
       },
       {
         type: "image",
         content: roseStringer,
-        title: "Animated Deliverable: Stringer Transition"
+        title: "Stringer Transition"
       }
     ]
   },
