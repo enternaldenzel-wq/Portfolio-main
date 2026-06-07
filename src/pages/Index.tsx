@@ -8,9 +8,10 @@ import projectUrban from "@/assets/project-urban.jpg";
 import projectSauce from "@/assets/project-sauce.jpg";
 import projectSaddington from "@/assets/project-saddington.png";
 import projectAnubis from "@/assets/Anubis_Fitness/Hero.jpg";
-
+import projectRose from "@/assets/Rośe’s Studio/Artboard 2@4x.png";
 
 const portraits = [
+  { id: "mixed-by-rose", src: projectRose, title: "MixedByRosé", alt: "MixedByRosé – Twitch Streaming Package" },
   { id: "fancast", src: projectFancast, title: "FanCast App", alt: "FanCast App – UX Case Study" },
   { id: "urban-youth", src: projectUrban, title: "Urban Youth", alt: "Urban Youth Brand Guide" },
   { id: "the-sauce", src: projectSauce, title: "The Sauce", alt: "The Sauce – Written Report" },
