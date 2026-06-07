@@ -11,9 +11,6 @@ import projectRose from "@/assets/project-rose.png";
 import roseArt1 from "@/assets/Rośe’s Studio/Artboard 1@4x.png";
 import roseArt2 from "@/assets/Rośe’s Studio/Artboard 2@4x.png";
 import roseArt2_2 from "@/assets/Rośe’s Studio/Artboard 2_2@4x.png";
-import roseVideoStarting from "@/assets/Rośe’s Studio/Starting Soon Animated.mp4";
-import roseVideoQR from "@/assets/Rośe’s Studio/Starting to QR Code Animation.mp4";
-import roseTiktok from "@/assets/Rośe’s Studio/Starting Soon Static Tiktok.png";
 import roseStreamPaused from "@/assets/Rośe’s Studio/stream is paused.gif";
 import roseStringer from "@/assets/Rośe’s Studio/Stringer.gif";
 import projectUrban from "@/assets/Urban Youth/Urban_Youth_BrandGuide_LinesUrban_Youth.jpg";
@@ -161,21 +158,6 @@ export const projects: Project[] = [
         content: "The brief gave me room to work, so I built something that felt like it belonged in a real studio environment rather than a typical Twitch aesthetic. Black and white photography of Rosé in session grounds everything in the actual craft. Red typography cuts through without decorating — functional and direct. The result is a package that looks the same whether the stream is live, offline, or transitioning between scenes."
       },
       { type: "image", content: roseArt2_2, title: "Live Overlay" },
-      {
-        type: "video",
-        content: roseVideoStarting,
-        title: "Animated Deliverable: Starting Soon"
-      },
-      {
-        type: "video",
-        content: roseVideoQR,
-        title: "Animated Deliverable: Transition Sequence"
-      },
-      {
-        type: "image",
-        content: roseTiktok,
-        title: "Social Media Asset"
-      },
       {
         type: "image",
         content: roseStreamPaused,
