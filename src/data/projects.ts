@@ -137,7 +137,7 @@ export const projects: Project[] = [
     role: "Brand & Motion Designer",
     industry: "Music / Streaming",
     category: "Branding, Motion Graphics",
-    heroImage: roseArt1,
+    heroImage: roseArt2,
     description: "A full Twitch streaming package for a London mixing engineer, built around his personal brand and designed to hold up on screen every week.",
     sections: [
       {
