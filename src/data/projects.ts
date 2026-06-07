@@ -127,20 +127,20 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: "mixed-by-rose",
-    title: "MixedByRosé — Twitch Streaming Package",
+    title: "MixedByRosé — Kick Streaming Package",
     client: "MixedByRosé",
     year: "2026",
     role: "Brand & Motion Designer",
     industry: "Music / Streaming",
     category: "Branding, Motion Graphics",
     heroImage: roseOffline,
-    description: "A full Twitch streaming package for a London mixing engineer, built around his personal brand and designed to hold up on screen every week.",
+    description: "A full Kick streaming package for a London mixing engineer, built around his personal brand and designed to hold up on screen every week.",
     sections: [
       {
         type: "text",
         title: "The context",
         subtitle: "Professional, studio-rooted, no fluff.",
-        content: "Rosé is a mixing engineer based in London who streams his sessions live on Twitch every Thursday. He came to me directly asking for a streaming package that reflected where he was at as an engineer — professional, studio-rooted, no fluff. I took full creative control on the direction."
+        content: "Rosé is a mixing engineer based in London who streams his sessions live on Kick every Thursday. He came to me directly asking for a streaming package that reflected where he was at as an engineer — professional, studio-rooted, no fluff. I took full creative control on the direction."
       },
       {
         type: "text",
@@ -151,8 +151,8 @@ export const projects: Project[] = [
       {
         type: "text",
         title: "The creative direction",
-        subtitle: "Studio environment over typical Twitch aesthetic.",
-        content: "The brief gave me room to work, so I built something that felt like it belonged in a real studio environment rather than a typical Twitch aesthetic. Black and white photography of Rosé in session grounds everything in the actual craft. Red typography cuts through without decorating — functional and direct. The result is a package that looks the same whether the stream is live, offline, or transitioning between scenes."
+        subtitle: "Studio environment over typical Kick aesthetic.",
+        content: "The brief gave me room to work, so I built something that felt like it belonged in a real studio environment rather than a typical Kick aesthetic. Black and white photography of Rosé in session grounds everything in the actual craft. Red typography cuts through without decorating — functional and direct. The result is a package that looks the same whether the stream is live, offline, or transitioning between scenes."
       },
       { type: "image", content: roseOffline, title: "Stream Offline Screen" },
       { type: "image", content: roseBanner, title: "Channel Banner" },

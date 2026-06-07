@@ -11,7 +11,7 @@ import projectAnubis from "@/assets/Anubis_Fitness/Hero.jpg";
 import projectRose from "@/assets/Rose Studio/Stream is offline.png";
 
 const portraits = [
-  { id: "mixed-by-rose", src: projectRose, title: "MixedByRosé", alt: "MixedByRosé – Twitch Streaming Package" },
+  { id: "mixed-by-rose", src: projectRose, title: "MixedByRosé", alt: "MixedByRosé – Kick Streaming Package" },
   { id: "fancast", src: projectFancast, title: "FanCast App", alt: "FanCast App – UX Case Study" },
   { id: "urban-youth", src: projectUrban, title: "Urban Youth", alt: "Urban Youth Brand Guide" },
   { id: "the-sauce", src: projectSauce, title: "The Sauce", alt: "The Sauce – Written Report" },
