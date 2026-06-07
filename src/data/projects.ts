@@ -121,6 +121,7 @@ export interface Project {
   category: string;
   heroImage: string;
   description: string;
+  link?: string;
   sections: ProjectSection[];
 }
 
@@ -135,6 +136,7 @@ export const projects: Project[] = [
     category: "Branding, Motion Graphics",
     heroImage: roseOffline,
     description: "A full Kick streaming package for a London mixing engineer, built around his personal brand and designed to hold up on screen every week.",
+    link: "https://kick.com/mixedbyrose",
     sections: [
       {
         type: "text",

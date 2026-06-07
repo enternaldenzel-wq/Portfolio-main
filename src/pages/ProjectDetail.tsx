@@ -85,6 +85,19 @@ const ProjectDetail = () => {
                   <div className="h-[1px] w-8 bg-white/20 group-hover:w-16 group-hover:bg-white transition-all duration-700" />
                 </button>
 
+                {/* External Link */}
+                {project.link && (
+                  <a 
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group flex items-center gap-4 text-white/40 hover:text-white transition-all duration-500 py-2"
+                  >
+                    <span>View Channel</span>
+                    <div className="h-[1px] w-8 bg-white/20 group-hover:w-16 group-hover:bg-white transition-all duration-700" />
+                  </a>
+                )}
+
                 {/* Skip to Live Experience (Conditioned on existence) */}
                 {project.sections.some(s => s.type === "iframe") && (
                   <button 
