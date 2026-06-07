@@ -14,6 +14,8 @@ import roseArt2_2 from "@/assets/Rośe’s Studio/Artboard 2_2@4x.png";
 import roseVideoStarting from "@/assets/Rośe’s Studio/Starting Soon Animated.mp4";
 import roseVideoQR from "@/assets/Rośe’s Studio/Starting to QR Code Animation.mp4";
 import roseTiktok from "@/assets/Rośe’s Studio/Starting Soon Static Tiktok.png";
+import roseStreamPaused from "@/assets/Rośe’s Studio/stream is paused.gif";
+import roseStringer from "@/assets/Rośe’s Studio/Stringer.gif";
 import projectUrban from "@/assets/Urban Youth/Urban_Youth_BrandGuide_LinesUrban_Youth.jpg";
 import urbanIntro from "@/assets/Urban Youth/Urban_Youth_BrandGuide_LinesIntroduction.jpg";
 import urbanLogo from "@/assets/Urban Youth/Urban_Youth_BrandGuide_LinesPrimary_Logo.jpg";
@@ -127,6 +129,65 @@ export interface Project {
 }
 
 export const projects: Project[] = [
+  {
+    id: "mixed-by-rose",
+    title: "MixedByRosé — Twitch Streaming Package",
+    client: "MixedByRosé",
+    year: "2024",
+    role: "Brand & Motion Designer",
+    industry: "Music / Streaming",
+    category: "Branding, Motion Graphics",
+    heroImage: roseArt1,
+    description: "A full Twitch streaming package for a London mixing engineer, built around his personal brand and designed to hold up on screen every week.",
+    sections: [
+      {
+        type: "text",
+        title: "The context",
+        subtitle: "Professional, studio-rooted, no fluff.",
+        content: "Rosé is a mixing engineer based in London who streams his sessions live on Twitch every Thursday. He came to me directly asking for a streaming package that reflected where he was at as an engineer — professional, studio-rooted, no fluff. I took full creative control on the direction."
+      },
+      { type: "image", content: roseArt1, title: "Channel Banner" },
+      {
+        type: "text",
+        title: "What I delivered",
+        subtitle: "A complete streaming asset package.",
+        content: "A complete streaming asset package: channel banner, offline screen, live overlays, and transition animations (stringers). His personal logo was integrated throughout as the anchor of the visual identity across all states."
+      },
+      { type: "image", content: roseArt2, title: "Offline Screen" },
+      {
+        type: "text",
+        title: "The creative direction",
+        subtitle: "Studio environment over typical Twitch aesthetic.",
+        content: "The brief gave me room to work, so I built something that felt like it belonged in a real studio environment rather than a typical Twitch aesthetic. Black and white photography of Rosé in session grounds everything in the actual craft. Red typography cuts through without decorating — functional and direct. The result is a package that looks the same whether the stream is live, offline, or transitioning between scenes."
+      },
+      { type: "image", content: roseArt2_2, title: "Live Overlay" },
+      {
+        type: "video",
+        content: roseVideoStarting,
+        title: "Animated Deliverable: Starting Soon"
+      },
+      {
+        type: "video",
+        content: roseVideoQR,
+        title: "Animated Deliverable: Transition Sequence"
+      },
+      {
+        type: "image",
+        content: roseTiktok,
+        title: "Social Media Asset"
+      },
+      {
+        type: "image",
+        content: roseStreamPaused,
+        title: "Animated Deliverable: Stream Paused"
+      },
+      {
+        type: "image",
+        content: roseStringer,
+        title: "Animated Deliverable: Stringer Transition"
+      }
+    ]
+  },
   {
     id: "fancast",
     title: "FanCast Design System",
