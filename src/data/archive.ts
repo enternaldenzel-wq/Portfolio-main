@@ -147,6 +147,7 @@ export const archiveEntries: ArchiveEntry[] = [
     category: "Graphic Design",
     year: "2021",
     image: archiveNew2
+  },
   {
     id: "arch-new-4",
     title: "Poster Design II",
