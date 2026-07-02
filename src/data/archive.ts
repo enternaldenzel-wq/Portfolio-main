@@ -131,14 +131,14 @@ export const archiveEntries: ArchiveEntry[] = [
   {
     id: "arch-77",
     title: "The Silent Street",
-    category: "Photography",
+    category: "Graphic Design",
     year: "2023",
     image: img77
   },
   {
     id: "arch-78",
     title: "Final Archive Still",
-    category: "Photography",
+    category: "Graphic Design",
     year: "2024",
     image: img78
   },
