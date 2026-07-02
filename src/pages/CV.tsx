@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import cvPdf from "@/assets/Denzel_Nwankwo_Digital_Designer_CV (2026).pdf";
+import cvPdf from "@/assets/Denzel_Nwankwo_Digital_Designer_CV.pdf";
 
 const CV = () => {
   const fadeIn = {
@@ -31,7 +31,7 @@ const CV = () => {
             
             <a 
               href={cvPdf} 
-              download="Denzel_Nwankwo_Digital_Designer_CV (2026).pdf"
+              download="Denzel_Nwankwo_Digital_Designer_CV.pdf"
               className="group relative inline-flex items-center gap-4 bg-white px-8 py-5 text-black font-mono-text text-[10px] uppercase tracking-widest overflow-hidden transition-transform hover:scale-[1.02] active:scale-[0.98]"
             >
               <span className="relative z-10">Download CV [PDF]</span>
