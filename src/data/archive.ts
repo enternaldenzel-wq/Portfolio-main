@@ -14,7 +14,6 @@ import img57 from "@/assets/Archive/img57.jpg";
 import img61 from "@/assets/Archive/img61.jpg";
 import img77 from "@/assets/Archive/img77.jpg";
 import img78 from "@/assets/Archive/img78.jpg";
-import archiveNew1 from "@/assets/Archive/archive-new-1.png";
 import archiveNew2 from "@/assets/Archive/archive-new-2.png";
 import archiveNew3 from "@/assets/Archive/archive-new-3.png";
 import archiveNew4 from "@/assets/Archive/archive-new-4.png";
@@ -142,13 +141,6 @@ export const archiveEntries: ArchiveEntry[] = [
     category: "Photography",
     year: "2024",
     image: img78
-  },
-  {
-    id: "arch-new-1",
-    title: "Max Verstappen Poster",
-    category: "Graphic Design",
-    year: "2024",
-    image: archiveNew1
   },
   {
     id: "arch-new-2",
