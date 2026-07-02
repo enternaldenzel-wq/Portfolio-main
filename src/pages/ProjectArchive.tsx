@@ -30,7 +30,7 @@ const ProjectArchive = () => {
             </Link>
             <div className="flex flex-col gap-8 max-w-[1400px]">
               <h2 className="font-body text-[clamp(4rem,10vw,10rem)] leading-[0.85] tracking-tight text-white/95 font-medium">
-                The Archive.
+                The Archive (2020-2024)
               </h2>
               <div className="max-w-xl md:ml-[30%] mt-4">
                 <p className="font-body text-lg md:text-xl text-white/30 leading-relaxed font-light">
