@@ -15,7 +15,6 @@ import img61 from "@/assets/Archive/img61.jpg";
 import img77 from "@/assets/Archive/img77.jpg";
 import img78 from "@/assets/Archive/img78.jpg";
 import archiveNew2 from "@/assets/Archive/archive-new-2.png";
-import archiveNew3 from "@/assets/Archive/archive-new-3.png";
 import archiveNew4 from "@/assets/Archive/archive-new-4.png";
 
 export interface ArchiveEntry {
@@ -148,14 +147,6 @@ export const archiveEntries: ArchiveEntry[] = [
     category: "Graphic Design",
     year: "2021",
     image: archiveNew2
-  },
-  {
-    id: "arch-new-3",
-    title: "Poster Design I",
-    category: "Graphic Design",
-    year: "2024",
-    image: archiveNew3
-  },
   {
     id: "arch-new-4",
     title: "Poster Design II",
