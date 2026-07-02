@@ -5,7 +5,6 @@ import img20 from "@/assets/Archive/img20.jpg";
 import img36 from "@/assets/Archive/img36.jpg";
 import img37 from "@/assets/Archive/img37.jpg";
 import img43 from "@/assets/Archive/img43.jpg";
-import img45 from "@/assets/Archive/img45.jpg";
 import img46 from "@/assets/Archive/img46.jpg";
 import img51 from "@/assets/Archive/img51.jpg";
 import img52 from "@/assets/Archive/img52.jpg";
@@ -75,13 +74,6 @@ export const archiveEntries: ArchiveEntry[] = [
     category: "Photography",
     year: "2024",
     image: img43
-  },
-  {
-    id: "arch-45",
-    title: "UI Concept - Night",
-    category: "Landing Page",
-    year: "2023",
-    image: img45
   },
   {
     id: "arch-46",
