@@ -80,7 +80,7 @@ export const archiveEntries: ArchiveEntry[] = [
   {
     id: "arch-45",
     title: "UI Concept - Night",
-    category: "Photography",
+    category: "Landing Page",
     year: "2023",
     image: img45
   },
