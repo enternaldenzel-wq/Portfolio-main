@@ -57,54 +57,45 @@ const ProjectArchive = () => {
             ))}
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-6 auto-rows-[300px]">
+          <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4 w-full">
             <AnimatePresence mode="popLayout">
-              {filteredEntries.map((project, i) => {
-                // Assign bento spans based on index or category for variety
-                const isLarge = i === 0 || i === 7 || i === 12;
-                const isWide = i === 2 || i === 10 || i === 15;
-                const isTall = i === 1 || i === 5 || i === 13;
-
-                return (
-                  <motion.div 
-                    key={project.id}
-                    layout
-                    initial={{ opacity: 0, scale: 0.9 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    exit={{ opacity: 0, scale: 0.9 }}
-                    transition={{ duration: 0.5, ease: [0.23, 1, 0.32, 1] }}
-                    onClick={() => setSelectedImage(project)}
-                    className={`group relative overflow-hidden rounded-xl border border-white/5 bg-white/[0.02] backdrop-blur-3xl transition-all duration-500 hover:border-white/20 hover:bg-white/[0.05] cursor-pointer
-                      ${isLarge ? "md:col-span-2 md:row-span-2" : ""}
-                      ${isWide ? "md:col-span-2" : ""}
-                      ${isTall ? "md:row-span-2" : ""}
-                    `}
-                  >
-                    <div className="absolute inset-x-6 top-6 z-20 flex justify-between items-start opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                       <span className="font-mono-text text-[9px] uppercase tracking-widest text-white/40 bg-black/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/10">
+              {filteredEntries.map((project, i) => (
+                <motion.div 
+                  key={project.id}
+                  layout
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0, scale: 0.95 }}
+                  transition={{ duration: 0.4, ease: [0.23, 1, 0.32, 1] }}
+                  onClick={() => setSelectedImage(project)}
+                  className="relative group overflow-hidden bg-white/[0.02] cursor-pointer rounded-xl break-inside-avoid"
+                >
+                  <img 
+                    src={project.image} 
+                    alt={project.title} 
+                    className="w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]" 
+                    loading="lazy"
+                  />
+                  
+                  {/* Hover Overlay */}
+                  <div className="absolute inset-0 bg-black/40 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-between p-6 pointer-events-none">
+                    <div className="flex justify-between items-start translate-y-[-10px] group-hover:translate-y-0 transition-transform duration-500">
+                       <span className="font-mono-text text-[9px] uppercase tracking-widest text-white bg-black/60 px-3 py-1.5 rounded-full border border-white/10">
                          {project.category}
                        </span>
-                       <span className="font-mono-text text-[9px] text-white/20">{project.year}</span>
+                       <span className="font-mono-text text-[9px] text-white/60">{project.year}</span>
                     </div>
 
-                    <div className="relative h-full w-full p-8 flex items-center justify-center">
-                      <img 
-                        src={project.image} 
-                        alt={project.title} 
-                        className="max-h-full max-w-full object-contain shadow-2xl transition-transform duration-700 group-hover:scale-[1.02]" 
-                      />
-                    </div>
-
-                    <div className="absolute inset-x-0 bottom-0 z-20 p-6 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 bg-gradient-to-t from-black/80 to-transparent">
+                    <div className="translate-y-[10px] group-hover:translate-y-0 transition-transform duration-500">
                       {project.note && (
-                        <p className="font-mono-text text-[10px] text-white/50 mt-1 uppercase tracking-widest">
+                        <p className="font-mono-text text-[10px] text-white mt-1 uppercase tracking-widest drop-shadow-md">
                           {project.note}
                         </p>
                       )}
                     </div>
-                  </motion.div>
-                );
-              })}
+                  </div>
+                </motion.div>
+              ))}
             </AnimatePresence>
           </div>
 
